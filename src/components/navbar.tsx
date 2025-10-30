@@ -26,7 +26,7 @@ export default function Navbar() {
   }, []);
 
   const LINKS = [
-    { name: "Vision", href: "#vision" },
+    { name: "Vision", href: "#Vision" },
     { name: "Features", href: "#Features" },
     { name: "Platform", href: "#Platform" },
     { name: "Technology", href: "#Technology" },
