@@ -24,7 +24,7 @@ export default function Navbar() {
     <nav className="fixed top-0 py-5 flex w-full">
       <main className="flex max-w-[1400px] mx-auto justify-between min-w-[1400px]">
         <h1 className="text-2xl font-bold">CARECHAIN</h1>
-        <div>
+        <div className="space-x-5">
           {LINKS.map((link) => (
             <Link href={link.href} key={link.href}>
               <Button variant={"ghost"}>{link.name}</Button>
@@ -32,7 +32,7 @@ export default function Navbar() {
           ))}
         </div>
         <Link href={"#"}>
-          <Button variant={"secondary"}>Request Access</Button>
+          <Button variant={"outline"}>Request Access</Button>
         </Link>
       </main>
     </nav>
