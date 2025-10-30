@@ -138,7 +138,24 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* === HIDE SCROLLBAR WHILE KEEPING SCROLL FUNCTIONAL === */
+  /* Chrome, Edge, Safari */
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Firefox */
+  * {
+    scrollbar-width: none; /* hides scrollbar but keeps scroll active */
+  }
+
+  /* IE and old Edge (optional fallback) */
+  * {
+    -ms-overflow-style: none;
   }
 }
