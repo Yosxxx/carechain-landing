@@ -33,7 +33,7 @@ const CARECHAIN_STEPS = [
 
 export default function HowItWorks() {
   return (
-    <main className="space-y-10 min-h-screen flex flex-col justify-center items-center">
+    <main className="space-y-10 min-h-screen flex flex-col justify-center items-center p-2">
       <header>
         <div className="text-4xl font-bold text-center">How It Works.</div>
         <div className="text-muted-foreground text-center">
@@ -41,7 +41,7 @@ export default function HowItWorks() {
           interoperability
         </div>
       </header>
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-4 gap-5 max-xl:grid-cols-2">
         {CARECHAIN_STEPS.map((step) => (
           <div
             key={step.id}
@@ -50,9 +50,11 @@ export default function HowItWorks() {
             <div className="p-2 outline-1 outline-sidebar-border w-fit">
               <step.Icon className="w-15 h-15" />
             </div>
-            <div className="text-xl font-bold">Step {step.id}</div>
-            <div className="text-xl font-bold">{step.title}</div>
-            <div className="text-sm text-muted-foreground">
+            <div className="text-xl font-bold max-xl:text-sm">
+              Step {step.id}
+            </div>
+            <div className="text-xl font-bold max-xl:text-sm">{step.title}</div>
+            <div className="text-sm text-muted-foreground max-xl:text-xs">
               {step.description}
             </div>
           </div>
