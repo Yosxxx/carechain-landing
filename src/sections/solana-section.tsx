@@ -10,21 +10,21 @@ const SOLANA_STATS = [
 export default function SolanaSection() {
   return (
     <main>
-      <section className="min-h-screen flex max-w-6xl mx-auto justify-between items-center px-10 py-20">
+      <section className="min-h-screen flex max-w-6xl mx-auto justify-between items-center px-10 py-20 max-xl:flex-col-reverse">
         {/* LEFT: Content */}
         <div className="space-y-6 max-w-md">
-          <h1 className="text-5xl font-bold flex items-center gap-3">
+          <h1 className="text-5xl font-bold flex items-center gap-3 max-xl:text-2xl max-xl:mt-10">
             Built on
             <Image
               src="/solanaLogo.png"
               alt="Solana Logo"
               width={200}
               height={80}
-              className="inline-block"
+              className="inline-block max-xl:w-40"
             />
           </h1>
 
-          <p className="text-muted-foreground ">
+          <p className="text-muted-foreground">
             CareChain leverages Solana&apos;s high-performance blockchain to
             achieve sub-second transaction finality, verifiable record
             integrity, and cryptographic guarantees at scale ensuring healthcare
@@ -45,11 +45,14 @@ export default function SolanaSection() {
         </div>
 
         {/* RIGHT: Code Block */}
-        <div className="relative group">
+        <div className="relative group max-xl:mx-4 max-xl:mt-8">
           {/* Outer Solana Glow */}
           <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-[#9945FF]/50 to-[#14F195]/50 blur-3xl opacity-80 group-hover:opacity-100 transition-opacity" />
 
-          <pre className="relative font-mono text-base bg-[#0A0A0A]/95 rounded-2xl p-8 min-h-112 border border-[#2a2a2a] backdrop-blur-md text-gray-100 leading-relaxed tracking-wide shadow-[0_0_25px_rgba(153,69,255,0.2)]">
+          <pre
+            className="relative font-mono bg-[#0A0A0A]/95 rounded-2xl p-8 border border-[#2a2a2a] backdrop-blur-md text-gray-100 leading-relaxed tracking-wide shadow-[0_0_25px_rgba(153,69,255,0.2)]
+  max-xl:p-4 max-xl:text-xs max-xl:overflow-x-auto max-xl:whitespace-pre-wrap max-xl:leading-snug"
+          >
             <code>
               <span className="text-[#14F195] font-semibold">fn</span>{" "}
               verify_record(
@@ -77,7 +80,8 @@ export default function SolanaSection() {
               <span className="text-[#14F195] font-semibold">
                 verify_signature
               </span>
-              (<br />
+              (
+              <br />
               &nbsp;&nbsp;&nbsp;&nbsp;account.data,
               <br />
               &nbsp;&nbsp;&nbsp;&nbsp;signature

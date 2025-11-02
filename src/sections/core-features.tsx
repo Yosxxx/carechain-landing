@@ -47,7 +47,7 @@ const FEATURES = [
     id: "zero-trust-architecture",
     title: "Zero-Trust Infrastructure",
     description:
-      "Built on cryptographic principles, CareChain operates without centralized trust — every verification, signature, and access request is provable and independently verifiable.",
+      "Built on cryptographic principles, CareChain operates without centralized trust every verification, signature, and access request is provable and independently verifiable.",
     Icon: ShieldCheck,
   },
 ];
@@ -63,17 +63,23 @@ export default function CoreFeatures() {
         </div>
       </header>
 
-      <div className="grid grid-cols-3">
-        {FEATURES.map((feature) => (
-          <div
-            key={feature.id}
-            className="h-[60vh] flex flex-col items-center justify-center text-center space-y-10 outline-1 outline-sidebar-border p-2 hover:bg-card/50 transition"
-          >
-            <feature.Icon className="w-24 h-24 text-muted-foreground" />
-            <div className="text-4xl font-bold">{feature.title}</div>
-            <div className="text-muted-foreground">{feature.description}</div>
-          </div>
-        ))}
+      <div className="w-full flex justify-center">
+        <div className="grid grid-cols-3 max-xl:grid-cols-1 p-2 w-full max-w-[1400px]">
+          {FEATURES.map((feature) => (
+            <div
+              key={feature.id}
+              className="h-[60vh] max-xl:h-[30vh] flex flex-col items-center justify-center text-center space-y-10 outline-1 outline-sidebar-border p-2 hover:bg-card/50 transition"
+            >
+              <feature.Icon className="w-24 h-24 text-muted-foreground max-xl:w-18 max-xl:h-18" />
+              <div className="text-4xl font-bold max-xl:text-sm">
+                {feature.title}
+              </div>
+              <div className="text-muted-foreground max-xl:text-xs">
+                {feature.description}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </main>
   );
