@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 py-5 flex w-full transition-colors duration-300 backdrop-blur-xl ${
+      className={`fixed top-0 py-5 flex w-full transition-colors duration-300 backdrop-blur-xl max-xl:hidden ${
         isSolid
           ? "bg-white/60 dark:bg-neutral-900/50 border-b border-sidebar-accent"
           : "bg-transparent"

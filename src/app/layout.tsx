@@ -14,9 +14,8 @@ export default function RootLayout({
         <LenisScroll />
         <LightRays />
         <Navbar />
-        <main className="min-w-[1400px] max-w-[1400px] mx-auto">
-          {children}
-        </main>
+
+        {children}
       </body>
     </html>
   );

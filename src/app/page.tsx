@@ -6,7 +6,7 @@ import SolanaSection from "@/sections/solana-section";
 
 export default function Home() {
   return (
-    <main>
+    <main className="max-w-[1400px] mx-auto">
       <Header />
       <Vision />
       <HowItWorks />
