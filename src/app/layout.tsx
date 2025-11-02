@@ -12,7 +12,9 @@ export default function RootLayout({
       <body className="dark">
         <LightRays />
         <Navbar />
-        <main className="xl:w-min-[1400px]">{children}</main>
+        <main className="min-w-[1400px] max-w-[1400px] mx-auto">
+          {children}
+        </main>
       </body>
     </html>
   );
