@@ -26,14 +26,14 @@ export default function Navbar() {
         <h1 className="text-2xl font-bold">CARECHAIN</h1>
         <div>
           {LINKS.map((link) => (
-            <Link href={link.href} key={link.href}>
-              <Button variant={"ghost"}>{link.name}</Button>
-            </Link>
+            <Button asChild variant="ghost" key={link.href}>
+              <Link href={link.href}>{link.name}</Link>
+            </Button>
           ))}
         </div>
-        <Link href={"#"}>
-          <Button variant={"secondary"}>Request Access</Button>
-        </Link>
+        <Button asChild variant="secondary">
+          <Link href="#">Request Access</Link>
+        </Button>
       </main>
     </nav>
   );
