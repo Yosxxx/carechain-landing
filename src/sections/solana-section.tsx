@@ -10,7 +10,10 @@ const SOLANA_STATS = [
 export default function SolanaSection() {
   return (
     <main>
-      <section className="min-h-screen flex max-w-6xl mx-auto justify-between items-center px-10 py-20 max-xl:flex-col-reverse">
+      <section
+        className="min-h-screen flex max-w-6xl mx-auto justify-between items-center px-10 py-20 max-xl:flex-col-reverse"
+        id="technology"
+      >
         {/* LEFT: Content */}
         <div className="space-y-6 max-w-md">
           <h1 className="text-5xl font-bold flex items-center gap-3 max-xl:text-2xl max-xl:mt-10">

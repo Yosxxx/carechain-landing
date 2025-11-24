@@ -17,7 +17,7 @@ export default function Vision() {
   // -----------------------
   if (isXL) {
     return (
-      <main className="min-h-screen grid gap-5 max-w-4xl mx-auto">
+      <main className="min-h-screen grid gap-5 max-w-4xl mx-auto" id="vision">
         <div className="grid grid-cols-2 gap-x-20">
           <div className="flex flex-col justify-end text-4xl font-bold">
             <div>THE</div>
@@ -50,7 +50,10 @@ export default function Vision() {
   // 📱 Below XL layout
   // -----------------------
   return (
-    <main className="min-h-[50vh] grid gap-5 max-w-4xl mx-auto px-5">
+    <main
+      className="min-h-[50vh] grid gap-5 max-w-4xl mx-auto px-5"
+      id="vision"
+    >
       <div className="flex flex-col gap-y-10">
         <div className="flex flex-col">
           <div className="text-2xl font-bold">

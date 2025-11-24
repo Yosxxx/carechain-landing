@@ -33,7 +33,10 @@ const CARECHAIN_STEPS = [
 
 export default function HowItWorks() {
   return (
-    <main className="space-y-10 min-h-screen flex flex-col justify-center items-center p-2">
+    <main
+      className="space-y-10 min-h-screen flex flex-col justify-center items-center p-2"
+      id="features"
+    >
       <header>
         <div className="text-4xl font-bold text-center">How It Works.</div>
         <div className="text-muted-foreground text-center">

@@ -54,7 +54,7 @@ const FEATURES = [
 
 export default function CoreFeatures() {
   return (
-    <main className="min-h-screen space-y-10">
+    <main className="min-h-screen space-y-10" id="platform">
       <header>
         <div className="text-4xl font-bold text-center">How It Works.</div>
         <div className="text-muted-foreground text-center">
